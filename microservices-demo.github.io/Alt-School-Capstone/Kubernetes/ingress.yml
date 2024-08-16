@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: egbedo.me
+    - host: adeayo.me
       http:
         paths:
           - pathType: Prefix
@@ -19,7 +19,7 @@ spec:
                 port:
                   number: 80
 
-    - host: prometheus.egbedo.me
+    - host: prometheus.adeayo.me
       http:
         paths:
           - pathType: Prefix
@@ -30,7 +30,7 @@ spec:
                 port:
                   number: 9090  
 
-    - host: grafana.egbedo.me
+    - host: grafana.adeayo.me
       http:
         paths:
           - pathType: Prefix
@@ -41,7 +41,7 @@ spec:
                 port:
                   number: 80
 
-    - host: alertmanager.egbedo.me
+    - host: alertmanager.adeayo.me
       http:
         paths:
           - pathType: Prefix
@@ -53,9 +53,9 @@ spec:
                   number: 9093                                        
   tls:
     - hosts:
-        - egbedo.me
-        - grafana.egbedo.me
-        - prometheus.egbedo.me
-        - alertmanager.egbedo.me
+        - adeayo.me
+        - grafana.adeayo.me
+        - prometheus.adeayo.me
+        - alertmanager.adeayo.me
 
       secretName: sockshop-ingress-cert 

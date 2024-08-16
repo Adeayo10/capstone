@@ -68,10 +68,10 @@ To ensure the application's health and track its operations, we'll set up Promet
 ![svc](./Images/svc1.PNG)
 ![svc](./Images/svc2.PNG)
 
-12. Next step is setting the CName record of our domain `egbedo.me` to point to the load balancer address. One of the first edits we'll do to our domain
+12. Next step is setting the CName record of our domain `adeayo.me` to point to the load balancer address. One of the first edits we'll do to our domain
 ![cname](./Images/cname.PNG)
 
-13. With this, we'll be able to access the application on `egbedo.me` ![app](./Images/homepage.PNG)
+13. With this, we'll be able to access the application on `adeayo.me` ![app](./Images/homepage.PNG)
 
 14. The next step is to add the Jetstack Helm chart repository to your local Helm environment. Why is This Important?
  By adding the Jetstack repository, we gain access to all the Helm charts hosted by Jetstack, including the Cert-Manager chart, which is widely used for managing certificates in Kubernetes. We do this by running `helm repo add jetstack https://charts.jetstack.io --force-update`  
@@ -89,7 +89,7 @@ To ensure the application's health and track its operations, we'll set up Promet
 20. After doing this, we'll go back to our DNS management and configure or domain name to serve the several values of the grafana, prometheus and alertmanager as shown below.
 ![cname](./Images/cname2.PNG)
 
-21. We then run `kubectl apply -f ingress.yml` to apply the new configurations that we made for the grafana, prometheus and alertmanager such that when we visit `prometheus.egbedo.me`, we get ![pro](./Images/prometheus.PNG)
+21. We then run `kubectl apply -f ingress.yml` to apply the new configurations that we made for the grafana, prometheus and alertmanager such that when we visit `prometheus.adeayo.me`, we get ![pro](./Images/prometheus.PNG)
 
 ## Running the CI/CD pipeline
 
